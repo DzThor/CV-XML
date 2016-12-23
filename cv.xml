@@ -23,13 +23,13 @@
 
     <CONTACTO>
       <CUENTA servicio="gmail">javiersc_89@gmail.com</CUENTA>
-      <CUENTA servicio="twitter">https://twitter.com/javiersc_8989<CUENTA>
-      <CUENTA servicio="linkedin">https://linkedin.com/algo<CUENTA>
+      <CUENTA servicio="twitter">https://twitter.com/javiersc_8989</CUENTA>
+      <CUENTA servicio="linkedin">https://linkedin.com/algo</CUENTA>
     </CONTACTO>
 
     <ENLACES>
-	    <ENLACE url="blog.javiersierra.es" tipo="blog">
-      <ENLACE url="blog.emels.es" tipe="blog">
+	    <ENLACE url="blog.javiersierra.es" tipo="blog"></ENLACE>
+      <ENLACE url="blog.emels.es" tipe="blog"></ENLACE>
     </ENLACES>
 
   </DATOS-PERSONALES>

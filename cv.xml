@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CURRICULUM>
 
-<DATOS-PERSONALES>
-<APELLIDO>Sierra Concepción</APELLIDO>
-<NOMBRE>Javier </NOMBRE>
-<NACIONALIDAD>Española</NACIONALIDAD>
-<NACIMIENTO fecha="1968-02-09"></NACIMIENTO>
+  <DATOS-PERSONALES>
+    <APELLIDO>Sierra Concepción</APELLIDO>
+    <NOMBRE>Javier </NOMBRE>
+    <NACIONALIDAD>Española</NACIONALIDAD>
+    <NACIMIENTO fecha="1968-02-09"></NACIMIENTO>
 
-<DIRECCION>
-	<PAIS>España</PAIS>
-	<PROVINCIA>Santa Cruz de Tenerife</PROVINCIA>
-	<CIUDAD>Santa Cruz de Tenerife</CIUDAD>
-<CALLE>Weyler</CALLE>
-<NUMERO>77</NUMERO>
-<CODPOST>38003</CODPOST>
-<DIRECCION>
-<TELEFONOS>
-	<TELEFONO tipo="fijo">922786548</TELEFONO>
-	<TELEFONO tipo="movil">606787543</TELEFONO>
-</TELEFONOS>
-<CONTACTO>
-<CUENTA servicio="gmail">javiersc_89@gmail.com</CUENTA>
-<CUENTA servicio="twitter">https://twitter.com/javiersc_8989<CUENTA>
-<CUENTA servicio="linkedin">https://linkedin.com/algo<CUENTA>
-</CONTACTO>
+    <DIRECCION>
+      <PAIS>España</PAIS>
+      <PROVINCIA>Santa Cruz de Tenerife</PROVINCIA>
+      <CIUDAD>Santa Cruz de Tenerife</CIUDAD>
+      <CALLE>Weyler</CALLE>
+      <NUMERO>77</NUMERO>
+      <CODPOST>38003</CODPOST>
+    </DIRECCION>
 
- <ENLACES>
-	<ENLACE url="blog.javiersierra.es" tipo="blog">
-<ENLACE url="blog.emels.es" tipe="blog">
-</ENLACES>
-</DATOS-PERSONALES>
+    <TELEFONOS>
+	     <TELEFONO tipo="fijo">922786548</TELEFONO>
+       <TELEFONO tipo="movil">606787543</TELEFONO>
+    </TELEFONOS>
+
+    <CONTACTO>
+      <CUENTA servicio="gmail">javiersc_89@gmail.com</CUENTA>
+      <CUENTA servicio="twitter">https://twitter.com/javiersc_8989<CUENTA>
+      <CUENTA servicio="linkedin">https://linkedin.com/algo<CUENTA>
+    </CONTACTO>
+
+    <ENLACES>
+	    <ENLACE url="blog.javiersierra.es" tipo="blog">
+      <ENLACE url="blog.emels.es" tipe="blog">
+    </ENLACES>
+
+  </DATOS-PERSONALES>
 
 <HISTORIAL-LABORAL>
 

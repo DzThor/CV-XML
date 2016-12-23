@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hr:Candidate
+  xmlns:hr="" 
+  xmlns:ccts=""
+  xmlns:xsi=""
+  xmlns:oa="">
+  <hr:DocumentID>000000001</hr:DocumentID>
+  <hr:CandidatePerson>
+    <hr:PersonName>
+      <hr:FormattedName>Blimpo Togwer</hr:FormattedName>
+      <oa:GivenName>Blimpo</oa:GivenName>
+      <hr:FamilyName>Togwer</hr:FamilyName>
+    </hr:PersonName>
+    <hr:Communication>
+      <hr:ChannelCode>Mail</hr:ChannelCode>
+      <hr:Address>
+        <oa:AddressLine sequence="1">5555 Yellow Brick Road</oa:AddressLine>
+        <oa:AddressLine sequence="2">RR #1</oa:AddressLine>
+        <oa:CityName>Lesser Village</oa:CityName>
+        <oa:CountrySubDivisionCode>KKK</oa:CountrySubDivisionCode>
+        <hr:CountryCode>XX</hr:CountryCode>
+        <oa:PostalCode>AAA BBB</oa:PostalCode>
+      </hr:Address>
+    </hr:Communication>
+  </hr:CandidatePerson>
+</hr:Candidate>

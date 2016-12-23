@@ -1,15 +1,74 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema
+    targetNamespace="http://www.w3schools.com/cv-sipc"
+    elementFormDefault="qualified"
+    xmlns="http://www.w3schools.com/cv-sipc cv.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="note">
- <xs:complexType>
-   <xs:sequence>
-     <xs:element name="to" type="xs:string"/>
-     <xs:element name="from" type="xs:string"/>
-     <xs:element name="heading" type="xs:string"/>
-     <xs:element name="body" type="xs:string"/>
-   </xs:sequence>
- </xs:complexType>
+<xs:simpleType name="tipoTelefono">
+    <xs:restriction base="xs:string">
+         <xs:enumeration value="movil"/>
+         <xs:enumeration value="fijo"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="telefono">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{3}-[0-9]{7}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="CURRICULUM">
+    <xs:complexType mixed="true">
+    <xs:all>
+
+    <xs:element name="DATOS-PERSONALES">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="NOMBRE" type="xs:string"/>
+                <xs:element name="APELLIDO" type="xs:string"/>
+                <xs:element name="NACIONALIDAD" type="xs:string"/>
+                <xs:element name="NACIMIENTO">
+                    <xs:complexType>
+                        <xs:attribute name="fecha" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="DIRECCION">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PAIS" type="xs:string"/>
+                            <xs:element name="PROVINCIA" type="xs:string"/>
+                            <xs:element name="CIUDAD" type="xs:string"/>
+                            <xs:element name="CALLE" type="xs:string"/>
+                            <xs:element name="NUMERO" type="xs:integer"/>
+                            <xs:element name="CODPOST" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="TELEFONOS">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TELEFONO" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string"> <!-- Check -->
+                                            <xs:attribute name="tipo" type="xs:string" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    </xs:all>
+    </xs:complexType>
 </xs:element>
 
 </xs:schema>

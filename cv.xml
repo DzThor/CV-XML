@@ -92,20 +92,20 @@
 	<DIPLOMA organizacion="Universidad de La Laguna">Conocimientos de informática</DIPLOMA>
 </DIPLOMAS>
 <APTITUDES>
-	<APTITUD>Gestión de proyectos</APTITUD>
+	<APTITUD puntuacion="8">Gestión de proyectos</APTITUD>
+	<APTITUD puntuacion="8">Implementación de procesos</APTITUD>
+	<APTITUD puntuacion="9">Análisis y asesoramiento de clientes</APTITUD>
+	<APTITUD puntuacion="9">Desarrollo de personal</APTITUD>
+	<APTITUD puntuacion="6">Liderazgo de equipos</APTITUD>
+	<APTITUD puntuacion="6">HTML y XML</APTITUD>
+	<APTITUD puntuacion="9">Ruby</APTITUD>
+	<APTITUD puntuacion="9">Linux</APTITUD>
+	<APTITUD puntuacion="8">Metodologías Ágiles</APTITUD>
+	<APTITUD puntuacion="6">Javascript</APTITUD>
+	<APTITUD puntuacion="7">Python</APTITUD>
+	<APTITUD puntuacion="8">C/C++</APTITUD>
+	<APTITUD puntuacion="8">Rust</APTITUD>
 	<APTITUD>Emprendedor</APTITUD>
-	<APTITUD>Implementación de procesos</APTITUD>
-	<APTITUD>Análisis y asesoramiento de clientes</APTITUD>
-	<APTITUD>Desarrollo de personal</APTITUD>
-	<APTITUD>Liderazgo de equipos</APTITUD>
-	<APTITUD>HTML y XML</APTITUD>
-	<APTITUD>Ruby</APTITUD>
-	<APTITUD>Linux</APTITUD>
-	<APTITUD>Metodologías Ágiles</APTITUD>
-	<APTITUD>Javascript</APTITUD>
-	<APTITUD>Python</APTITUD>
-	<APTITUD>C/C++</APTITUD>
-	<APTITUD>Rust</APTITUD>
 	<APTITUD>Software de gestión de bases de datos</APTITUD>
 	<APTITUD>Software de pruebas de programas</APTITUD>
 	<APTITUD>Ingeniería de software basada en Web</APTITUD>

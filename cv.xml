@@ -34,98 +34,96 @@
 
   </DATOS-PERSONALES>
 
-<HISTORIAL-LABORAL>
+  <HISTORIAL-LABORAL>
 
-<EXPERIENCIA>
+    <EXPERIENCIA>
 
-<EMPRESA fecha-inicio="2010-05-08" fecha-final="2013-02-22" url="www.tgx.es" cargo="Desarrollador de software">The Gaming Experience (TGX)  Sata Cruz de Tenerife </EMPRESA>
-<LABORES>
-<TAREA>Realización de gran parte del proyecto web de la empresa.</TAREA>
-<TAREA>Actualización del sistema de back-end de los servidores.</TAREA>
-<TAREA>Implementación del algoritmo de búsqueda y creación de torneos.</TAREA>
-<TAREA>Diseño de la base de datos.</TAREA>
-</LABORES>
-</EXPERIENCIA>
+      <EMPRESA fecha-inicio="2010-05-08" fecha-final="2013-02-22" url="www.tgx.es" cargo="Desarrollador de software">The Gaming Experience (TGX)  Sata Cruz de Tenerife </EMPRESA>
+      <LABORES>
+        <TAREA>Realización de gran parte del proyecto web de la empresa.</TAREA>
+        <TAREA>Actualización del sistema de back-end de los servidores.</TAREA>
+        <TAREA>Implementación del algoritmo de búsqueda y creación de torneos.</TAREA>
+        <TAREA>Diseño de la base de datos.</TAREA>
+      </LABORES>
+    </EXPERIENCIA>
 
-<EXPERIENCIA>
-<EMPRESA fecha-inicio="2007-08-16" fecha-final="2009-04-12" cargo="Analista de seguridad" url="www.cajasiete.es">Caja 7  Canarias</EMPRESA>
+    <EXPERIENCIA>
+      <EMPRESA fecha-inicio="2007-08-16" fecha-final="2009-04-12" cargo="Analista de seguridad" url="www.cajasiete.es">Caja 7  Canarias</EMPRESA>
+      <LABORES>
+        <TAREA>Analicé la documentación del departamento para su correcta distribución y archivado.</TAREA>
+        <TAREA>Responsable de la seguridad en los sistemas.</TAREA>
+      </LABORES>
+    </EXPERIENCIA>
 
+    <EXPERIENCIA>
+      <EMPRESA fecha-inicio="2009-10-13" fecha-final="2010-01-28" url="www.osl.es" cargo="Investigador">OSL de la Universidad de La Laguna Canarias</EMPRESA>
+      <LABORES>
+        <TAREA>Investigación sobre las diferentes metodologías que se aplican al proceso de construcción de software libre.</TAREA>
+      </LABORES>
+    </EXPERIENCIA>
+  </HISTORIAL-LABORAL>
 
-<LABORES>
-<TAREA>Analicé la documentación del departamento para su correcta distribución y archivado.</TAREA>
-<TAREA>Responsable de la seguridad en los sistemas.</TAREA>
-</LABORES>
-</EXPERIENCIA>
+  <FORMACION>
 
-<EXPERIENCIA>
-<EMPRESA fecha-inicio="2009-10-13" fecha-final="2010-01-28" url="www.osl.es" cargo="Investigador">OSL de la Universidad de La Laguna Canarias</EMPRESA>
-<LABORES>
-<TAREA>Investigación sobre las diferentes metodologías que se aplican al proceso de construcción de software libre.</TAREA>
-</LABORES>
-</EXPERIENCIA>
-</HISTORIAL-LABORAL>
+    <ETAPA>
+      <CENTRO fecha-final="1984-01-01" fecha-inicio="1980-01-01"> IES San Nicolás El Sauzal</CENTRO>
+      <EDUCACION>Título de Educación Secundaria Obligatoria</EDUCACION>
+    </ETAPA>
 
+    <ETAPA>
+      <CENTRO fecha-final="1986-01-01" fecha-inicio="1984-01-01"> IES Teobaldo Power La Orotava</CENTRO>
+      <EDUCACION>Título de Bachillerato</EDUCACION>
+    </ETAPA>
 
-
-<FORMACION>
-
-<ETAPA>
-<CENTRO fecha-final="1984-01-01" fecha-inicio="1980-01-01"> IES San Nicolás El Sauzal</CENTRO>
-<EDUCACION>Título de Educación Secundaria Obligatoria</EDUCACION>
-</ETAPA>
-
-<ETAPA>
-<CENTRO fecha-final="1986-01-01" fecha-inicio="1984-01-01"> IES Teobaldo Power La Orotava</CENTRO>
-<EDUCACION>Título de Bachillerato</EDUCACION>
-</ETAPA>
-
-<ETAPA>
-<CENTRO fecha-final="1991-01-01" fecha-inicio="1986-01-01">Universidad De La Laguna Canarias</CENTRO>
-<EDUCACION>Licenciado en Ingeniería Informática Informática</EDUCACION>
-</ETAPA>
+    <ETAPA>
+      <CENTRO fecha-final="1991-01-01" fecha-inicio="1986-01-01">Universidad De La Laguna Canarias</CENTRO>
+      <EDUCACION>Licenciado en Ingeniería Informática Informática</EDUCACION>
+    </ETAPA>
 
 
-<DIPLOMAS>
-	<DIPLOMA organizacion="cambridge">CAE</DIPLOMA>
-	<DIPLOMA organizacion="IES Teobaldo Power">Diploma bachillerato</DIPLOMA>
-	<DIPLOMA organizacion="APGA">Diploma de certificación de cualidades de liderazgo</DIPLOMA>
-	<DIPLOMA organizacion="Universidad de La Laguna">Conocimientos de informática</DIPLOMA>
-</DIPLOMAS>
-<APTITUDES>
-	<APTITUD>Gestión de proyectos</APTITUD>
-	<APTITUD>Emprendedor</APTITUD>
-	<APTITUD>Implementación de procesos</APTITUD>
-	<APTITUD>Análisis y asesoramiento de clientes</APTITUD>
-	<APTITUD>Desarrollo de personal</APTITUD>
-	<APTITUD>Liderazgo de equipos</APTITUD>
-	<APTITUD>HTML y XML</APTITUD>
-	<APTITUD>Ruby</APTITUD>
-	<APTITUD>Linux</APTITUD>
-	<APTITUD>Metodologías Ágiles</APTITUD>
-	<APTITUD>Javascript</APTITUD>
-	<APTITUD>Python</APTITUD>
-	<APTITUD>C/C++</APTITUD>
-	<APTITUD>Rust</APTITUD>
-	<APTITUD>Software de gestión de bases de datos</APTITUD>
-	<APTITUD>Software de pruebas de programas</APTITUD>
-	<APTITUD>Ingeniería de software basada en Web</APTITUD>
-</APTITUDES>
+    <DIPLOMAS>
+	     <DIPLOMA organizacion="cambridge">CAE</DIPLOMA>
+       <DIPLOMA organizacion="IES Teobaldo Power">Diploma bachillerato</DIPLOMA>
+       <DIPLOMA organizacion="APGA">Diploma de certificación de cualidades de liderazgo</DIPLOMA>
+       <DIPLOMA organizacion="Universidad de La Laguna">Conocimientos de informática</DIPLOMA>
+    </DIPLOMAS>
 
-<IDIOMAS>
-	<IDIOMA nivel="A2">FRANCES</IDIOMA>
-	<IDIOMA nivel="C1">INGLES</IDIOMA>
-	<IDIOMA>CHINO</IDIOMA>
-</IDIOMAS>
+   <APTITUDES>
+      <APTITUD>Gestión de proyectos</APTITUD>
+    	<APTITUD>Emprendedor</APTITUD>
+    	<APTITUD>Implementación de procesos</APTITUD>
+    	<APTITUD>Análisis y asesoramiento de clientes</APTITUD>
+    	<APTITUD>Desarrollo de personal</APTITUD>
+    	<APTITUD>Liderazgo de equipos</APTITUD>
+    	<APTITUD>HTML y XML</APTITUD>
+    	<APTITUD>Ruby</APTITUD>
+    	<APTITUD>Linux</APTITUD>
+    	<APTITUD>Metodologías Ágiles</APTITUD>
+    	<APTITUD>Javascript</APTITUD>
+    	<APTITUD>Python</APTITUD>
+    	<APTITUD>C/C++</APTITUD>
+    	<APTITUD>Rust</APTITUD>
+    	<APTITUD>Software de gestión de bases de datos</APTITUD>
+    	<APTITUD>Software de pruebas de programas</APTITUD>
+    	<APTITUD>Ingeniería de software basada en Web</APTITUD>
+    </APTITUDES>
 
-</FORMACION>
-<LOGROS>
-<LOGRO fecha="2009-12-20">Colaboré con el equipo de Software Libre en el desarrollo de aplicaciones. Recibió un premio a la mejor aplicación del año.</LOGRO>
-<LOGRO fecha="2010-09-20">Aumenté las ventas en un 50% en un período de dos años en tgx.</LOGRO>
-<LOGRO>Fui empleado del mes en Caja siete.</LOGRO>
-</LOGROS>
+    <IDIOMAS>
+    	<IDIOMA nivel="A2">FRANCES</IDIOMA>
+    	<IDIOMA nivel="C1">INGLES</IDIOMA>
+    	<IDIOMA>CHINO</IDIOMA>
+    </IDIOMAS>
 
-<INFORMACION-ADICIONAL>"La excepcional orientación hacia el cliente de Juan ha llevado a nuestra sucursal bancaria a superar a otros competidores y a rebasar los objetivos de beneficio anuales." Enrique Adánez, director financiero de un banco.</INFORMACION-ADICIONAL>
+  </FORMACION>
 
-<RESUMEN>Conocimientos técnicos con sobresalientes aptitudes de creación de relaciones, formación y presentación. Con sólida experiencia en la gestión de grandes proyectos a todos los niveles, incluida la elaboración de presupuestos y la administración. Comercial con excelentes resultados y experto en informática. Comunicador dinámico que supera de manera constante los objetivos y las expectativas de la empresa. Muy ambicioso con experiencia en ventas, marketing y publicidad. Experto en análisis de mercado, previsión y valoración de las necesidades del cliente. Muy ambicioso con experiencia en ventas, marketing y publicidad. Experto en análisis de mercado, previsión y valoración de las necesidades del cliente.</RESUMEN>
+  <LOGROS>
+    <LOGRO fecha="2009-12-20">Colaboré con el equipo de Software Libre en el desarrollo de aplicaciones. Recibió un premio a la mejor aplicación del año.</LOGRO>
+    <LOGRO fecha="2010-09-20">Aumenté las ventas en un 50% en un período de dos años en tgx.</LOGRO>
+    <LOGRO>Fui empleado del mes en Caja siete.</LOGRO>
+  </LOGROS>
+
+  <INFORMACION-ADICIONAL>"La excepcional orientación hacia el cliente de Juan ha llevado a nuestra sucursal bancaria a superar a otros competidores y a rebasar los objetivos de beneficio anuales." Enrique Adánez, director financiero de un banco.</INFORMACION-ADICIONAL>
+
+  <RESUMEN>Conocimientos técnicos con sobresalientes aptitudes de creación de relaciones, formación y presentación. Con sólida experiencia en la gestión de grandes proyectos a todos los niveles, incluida la elaboración de presupuestos y la administración. Comercial con excelentes resultados y experto en informática. Comunicador dinámico que supera de manera constante los objetivos y las expectativas de la empresa. Muy ambicioso con experiencia en ventas, marketing y publicidad. Experto en análisis de mercado, previsión y valoración de las necesidades del cliente. Muy ambicioso con experiencia en ventas, marketing y publicidad. Experto en análisis de mercado, previsión y valoración de las necesidades del cliente.</RESUMEN>
 
 </CURRICULUM>

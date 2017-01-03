@@ -11,7 +11,7 @@
     <NACIONALIDAD>Española</NACIONALIDAD>
     <NACIMIENTO fecha="1968-02-09"></NACIMIENTO>
 
-    <DIRECCION>
+	<DIRECCION>
       <PAIS>España</PAIS>
       <PROVINCIA>Santa Cruz de Tenerife</PROVINCIA>
       <CIUDAD>Santa Cruz de Tenerife</CIUDAD>
@@ -25,15 +25,15 @@
        <TELEFONO tipo="movil">606787543</TELEFONO>
     </TELEFONOS>
 
-    <CONTACTO>
+    <CONTACTOS>
       <CUENTA servicio="gmail">javiersc_89@gmail.com</CUENTA>
       <CUENTA servicio="twitter">https://twitter.com/javiersc_8989</CUENTA>
       <CUENTA servicio="linkedin">https://linkedin.com/algo</CUENTA>
-    </CONTACTO>
+    </CONTACTOS>
 
     <ENLACES>
-	    <ENLACE url="blog.javiersierra.es" tipo="blog"></ENLACE>
-      <ENLACE url="blog.emels.es" tipe="blog"></ENLACE>
+	  <ENLACE url="blog.javiersierra.es" tipo="blog" />
+      <ENLACE url="blog.emels.es" tipo="blog" />
     </ENLACES>
 
   </DATOS-PERSONALES>

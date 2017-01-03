@@ -7,6 +7,10 @@
 
 <!-- TIPOS -->
 
+<xs:complexType name="nacimientoType">
+    <xs:attribute name="fecha" type="xs:date" use="required"/>
+</xs:complexType>
+
 <xs:simpleType name="telefonoValueType">
     <xs:restriction base="xs:string">
         <xs:pattern value="[0-9]{9}"/>
@@ -16,7 +20,7 @@
 <xs:complexType name="telefonoType">
     <xs:simpleContent>
         <xs:extension base="telefonoValueType">
-            <xs:attribute name="tipo">
+            <xs:attribute name="tipo" use="required">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="movil"/>
@@ -28,6 +32,26 @@
     </xs:simpleContent>
 </xs:complexType>
 
+<xs:complexType name="cuentaType">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="servicio" type="xs:string" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="enlaceType">
+    <xs:attribute name="url"  type="xs:string" use="required"/>
+    <xs:attribute name="tipo">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="blog"/>
+                <xs:enumeration value="red social"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:complexType>
+
 <!--*************************************************************************-->
 
 <xs:element name="CURRICULUM">
@@ -37,24 +61,20 @@
     <xs:element name="DATOS-PERSONALES">
         <xs:complexType>
             <xs:all>
-                <xs:element name="NOMBRE" type="xs:string"/>
-                <xs:element name="APELLIDO" type="xs:string"/>
+                <xs:element name="NOMBRE"       type="xs:string"/>
+                <xs:element name="APELLIDO"     type="xs:string"/>
                 <xs:element name="NACIONALIDAD" type="xs:string"/>
-                <xs:element name="NACIMIENTO">
-                    <xs:complexType>
-                        <xs:attribute name="fecha" type="xs:date" use="required"/>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="NACIMIENTO"   type="nacimientoType" />
 
                 <xs:element name="DIRECCION">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="PAIS" type="xs:string"/>
+                            <xs:element name="PAIS"      type="xs:string"/>
                             <xs:element name="PROVINCIA" type="xs:string"/>
-                            <xs:element name="CIUDAD" type="xs:string"/>
-                            <xs:element name="CALLE" type="xs:string"/>
-                            <xs:element name="NUMERO" type="xs:integer"/>
-                            <xs:element name="CODPOST" type="xs:integer"/>
+                            <xs:element name="CIUDAD"    type="xs:string"/>
+                            <xs:element name="CALLE"     type="xs:string"/>
+                            <xs:element name="NUMERO"    type="xs:integer"/>
+                            <xs:element name="CODPOST"   type="xs:integer"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -63,6 +83,22 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="TELEFONO" maxOccurs="unbounded" type="telefonoType" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="CONTACTOS">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CUENTA" maxOccurs="unbounded" type="cuentaType" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="ENLACES">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ENLACE" maxOccurs="unbounded" type="enlaceType" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

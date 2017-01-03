@@ -1,114 +1,235 @@
-<?xml version="1.0"?>
 <xs:schema
-    targetNamespace="http://www.w3schools.com"
+    attributeFormDefault="unqualified"
     elementFormDefault="qualified"
-    xmlns="http://www.w3schools.com"
+    targetNamespace="http://www.w3schools.com"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-<!-- TIPOS -->
-
-<xs:complexType name="nacimientoType">
-    <xs:attribute name="fecha" type="xs:date" use="required"/>
-</xs:complexType>
-
-<xs:simpleType name="telefonoValueType">
-    <xs:restriction base="xs:string">
-        <xs:pattern value="[0-9]{9}"/>
-    </xs:restriction>
-</xs:simpleType>
-
-<xs:complexType name="telefonoType">
-    <xs:simpleContent>
-        <xs:extension base="telefonoValueType">
-            <xs:attribute name="tipo" use="required">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="movil"/>
-                        <xs:enumeration value="fijo"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-        </xs:extension>
-    </xs:simpleContent>
-</xs:complexType>
-
-<xs:complexType name="cuentaType">
-    <xs:simpleContent>
-        <xs:extension base="xs:string">
-            <xs:attribute name="servicio" type="xs:string" use="required"/>
-        </xs:extension>
-    </xs:simpleContent>
-</xs:complexType>
-
-<xs:complexType name="enlaceType">
-    <xs:attribute name="url"  type="xs:string" use="required"/>
-    <xs:attribute name="tipo">
-        <xs:simpleType>
-            <xs:restriction base="xs:string">
-                <xs:enumeration value="blog"/>
-                <xs:enumeration value="red social"/>
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:attribute>
-</xs:complexType>
-
-<!--*************************************************************************-->
 
 <xs:element name="CURRICULUM">
     <xs:complexType mixed="true">
-    <xs:all>
+        <xs:sequence>
+            <xs:element name="DATOS-PERSONALES">
+                <xs:complexType>
+                    <xs:sequence>
 
-    <xs:element name="DATOS-PERSONALES">
-        <xs:complexType>
-            <xs:all>
-                <xs:element name="NOMBRE"       type="xs:string"/>
-                <xs:element name="APELLIDO"     type="xs:string"/>
-                <xs:element name="NACIONALIDAD" type="xs:string"/>
-                <xs:element name="NACIMIENTO"   type="nacimientoType" />
+                        <xs:element type="xs:string" name="APELLIDO"/>
 
-                <xs:element name="DIRECCION">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="PAIS"      type="xs:string"/>
-                            <xs:element name="PROVINCIA" type="xs:string"/>
-                            <xs:element name="CIUDAD"    type="xs:string"/>
-                            <xs:element name="CALLE"     type="xs:string"/>
-                            <xs:element name="NUMERO"    type="xs:integer"/>
-                            <xs:element name="CODPOST"   type="xs:integer"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                        <xs:element type="xs:string" name="NOMBRE"/>
 
-                <xs:element name="TELEFONOS">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="TELEFONO" maxOccurs="unbounded" type="telefonoType" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                        <xs:element type="xs:string" name="NACIONALIDAD"/>
 
-                <xs:element name="CONTACTOS">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="CUENTA" maxOccurs="unbounded" type="cuentaType" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                        <xs:element name="NACIMIENTO">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:date" name="fecha"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
 
-                <xs:element name="ENLACES">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="ENLACE" maxOccurs="unbounded" type="enlaceType" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                        <xs:element name="DIRECCION">
+                            <xs:complexType>
+                                <xs:sequence>
 
-            </xs:all>
-        </xs:complexType>
-    </xs:element>
+                                    <xs:element type="xs:string" name="PAIS"/>
+                                    <xs:element type="xs:string" name="PROVINCIA"/>
+                                    <xs:element type="xs:string" name="CIUDAD"/>
+                                    <xs:element type="xs:string" name="CALLE"/>
+                                    <xs:element type="xs:byte" name="NUMERO"/>
+                                    <xs:element type="xs:int" name="CODPOST"/>
 
-    </xs:all>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="TELEFONOS">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                    <xs:element name="TELEFONO" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:int">
+                                                    <xs:attribute type="xs:string" name="tipo" use="required"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="CONTACTOS">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="CUENTA" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="servicio" use="required"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="ENLACES">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                    <xs:element name="ENLACE" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="url" use="required"/>
+                                                    <xs:attribute type="xs:string" name="tipo" use="required"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="HISTORIAL-LABORAL">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="EXPERIENCIA" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                    <xs:element name="EMPRESA">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:date" name="fecha-inicio" use="required"/>
+                                                    <xs:attribute type="xs:date" name="fecha-final" use="required"/>
+                                                    <xs:attribute type="xs:anyURI" name="url" use="required"/>
+                                                    <xs:attribute type="xs:string" name="cargo" use="required"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element name="LABORES">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element type="xs:string" name="TAREA" maxOccurs="unbounded" minOccurs="0"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="FORMACION">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ETAPA" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                    <xs:element name="CENTRO">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:date" name="fecha-final" use="required"/>
+                                                    <xs:attribute type="xs:date" name="fecha-inicio" use="required"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element type="xs:string" name="EDUCACION"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="DIPLOMAS">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="DIPLOMA" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="organizacion" use="optional"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="APTITUDES">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                    <xs:element name="APTITUD" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:byte" name="puntuacion" use="optional"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="IDIOMAS">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="IDIOMA" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute type="xs:string" name="nivel" use="optional"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="LOGROS">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="LOGRO" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:date" name="fecha" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element type="xs:string" name="INFORMACION-ADICIONAL"/>
+
+            <xs:element type="xs:string" name="RESUMEN"/>
+
+        </xs:sequence>
     </xs:complexType>
 </xs:element>
-
 </xs:schema>
